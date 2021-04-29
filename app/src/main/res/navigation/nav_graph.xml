@@ -9,5 +9,23 @@
         android:id="@+id/tituloPrincipalJuego1Fragment"
         android:name="com.example.proyecto.TituloPrincipalJuego1Fragment"
         android:label="fragment_titulo_principal_juego1"
-        tools:layout="@layout/fragment_titulo_principal_juego1" />
+        tools:layout="@layout/fragment_titulo_principal_juego1" >
+        <action
+            android:id="@+id/action_tituloPrincipalJuego1Fragment_to_menucontinuarnuevapartidaFragment"
+            app:destination="@id/menucontinuarnuevapartidaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menucontinuarnuevapartidaFragment"
+        android:name="com.example.proyecto.menucontinuarnuevapartidaFragment"
+        android:label="fragment_menucontinuarnuevapartida"
+        tools:layout="@layout/fragment_menucontinuarnuevapartida" >
+        <action
+            android:id="@+id/action_menucontinuarnuevapartidaFragment_to_JUEGOFragment"
+            app:destination="@id/JUEGOFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/JUEGOFragment"
+        android:name="com.example.proyecto.JUEGOFragment"
+        android:label="fragment_j_u_e_g_o"
+        tools:layout="@layout/fragment_j_u_e_g_o" />
 </navigation>
